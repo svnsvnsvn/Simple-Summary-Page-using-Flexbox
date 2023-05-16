@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Hanken";
+    src: url('/results-summary-component-main/assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
+}
+@font-face {
+    font-family: "Hanken-Bold";
+    src: url('/results-summary-component-main/assets/fonts/static/HankenGrotesk-Bold.ttf') format('truetype');
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Hanken";
+}
+
+/*First Card*/
+.CardSummary {
+    background-color: white;
+    display: flex;
+    
+}
+
+.ScoreSummary {
+    width: 350px;
+    height: 529px;
+    border-radius: 1.5em;
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    flex: 1;
+    
+}
+
+.ScoreSummary h1 {
+    display: flex;
+    margin: 20px;
+    font-size: 1.2em;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.ResultsSummary {
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    margin: 1em;
+    font-size: 1.2em;
+    color: hsl(241, 100%, 89%);
+    
+}
+
+.ScoreCircle {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    
+}
+
+.Circle {
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-top: 5em;
+}
+
+.Circle p, .ScoreDetails p {
+    display: flex;
+    justify-content: center;
+    color: hsl(241, 100%, 89%);
+    font-family: 'Hanken';
+}
+
+.Circle h2, .ScoreDetails h3 {
+    color: white;
+    font-family: "Hanken";
+    
+}
+
+.Circle h2 {
+    font-size: 3.75em;
+    display: block;
+}
+
+.ScoreDetails {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.ScoreDetails h3 {
+    margin-top: 2em;
+}
+
+.ScoreDetails p {
+    color: hsl(241, 100%, 89%);
+    text-align: center;
+    width: 14em;
+    margin: 1em 4em 3em;
+}
+
+/*Second Card*/
+
+.ScoreBrief {
+    width: 350px;
+    height: 529px;
+    border-top-right-radius: 1.5em;
+    border-bottom-right-radius: 1.5em;
+    color: hsl(234, 70%, 15%);
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, .2);
+    flex: 1;
+    align-self: stretch;
+    flex-basis: .5;
+   
+}
+
+.BriefTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 1.75em 0;
+}
+
+.BriefTitle h1 {
+    width: 80%;
+    margin: .25em 0;
+    font-size: 1.5em;
+}
+
+.Sectors {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.brief {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 10px;
+    padding: 1em;
+    font-family: 'Hanken-bold';
+}
+
+.reaction h3 {
+    display: flex;
+    color: hsl(0, 100%, 67%);
+    align-items: center;
+    gap: 0.6em;
+    font-size: 1.1em;
+}
+
+.memory h3 {
+    display: flex;
+    color: hsl(39, 100%, 56%);
+    align-items: center;
+    gap: 0.6em;
+    font-size: 1.1em;
+}
+
+.verbal h3 {
+    display: flex;
+    color: hsl(166, 100%, 37%);
+    align-items: center;
+    gap: 0.6em;
+    font-size: 1.1em;
+}
+
+.visual h3 {
+    display: flex;
+    color: hsl(234, 85%, 45%);
+    align-items: center;
+    gap: 0.6em;
+    font-size: 1.1em;
+}
+
+.reaction {
+    width: 80%;
+    background-color: hsl(0, 100%, 97%);
+    border-radius: 10px;
+}
+.memory {
+    width: 80%;
+    background-color: hsl(39, 100%, 93%);;
+    border-radius: 10px;
+}
+.verbal {
+    width: 80%;
+    background-color: hsl(167, 92%, 95%);
+    border-radius: 10px;
+}
+.visual {
+    width: 80%;
+    background-color: hsl(231, 100%, 97%);
+    border-radius: 10px;
+}
+
+span {
+    color: hsl(0, 0%, 67%)
+}
+
+.Continue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2em;
+}
+button {
+    font-family: 'Hanken-Bold';
+    width: 80%;
+    background-color: hsl(234, 70%, 15%);
+    border-radius: 30px;
+    padding: 1em;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    body {
+        height: auto;
+    }
+    .CardSummary {
+        flex-direction: row;
+        width: min-content;
+        flex-wrap: wrap;
+    }
+}
