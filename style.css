@@ -228,7 +228,7 @@ span {
     margin-top: 2em;
 }
 button {
-    font-family: 'Hanken-Bold';
+    font-family: 'Hanken-Bold', Sans-Serif;
     width: 80%;
     background-color: hsl(234, 70%, 15%);
     border-radius: 30px;
