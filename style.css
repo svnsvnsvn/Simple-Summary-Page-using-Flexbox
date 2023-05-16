@@ -20,7 +20,7 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    font-family: "Hanken";
+    font-family: "Hanken","Arial";
 }
 
 /*First Card*/
@@ -82,12 +82,12 @@ body {
     display: flex;
     justify-content: center;
     color: hsl(241, 100%, 89%);
-    font-family: 'Hanken';
+    font-family: "Hanken", "Arial";
 }
 
 .Circle h2, .ScoreDetails h3 {
     color: white;
-    font-family: "Hanken";
+    font-family: "Hanken","Arial";
     
 }
 
@@ -160,7 +160,7 @@ body {
     width: 80%;
     margin: 10px;
     padding: 1em;
-    font-family: 'Hanken-bold';
+    font-family: "Hanken-bold","Arial";
 }
 
 .reaction h3 {
@@ -228,7 +228,7 @@ span {
     margin-top: 2em;
 }
 button {
-    font-family: 'Hanken-Bold', Sans-Serif;
+    font-family: 'Hanken-Bold', "Arial";
     width: 80%;
     background-color: hsl(234, 70%, 15%);
     border-radius: 30px;
